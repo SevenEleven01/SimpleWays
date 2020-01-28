@@ -1,18 +1,16 @@
-# Editor & IDE #
-.idea
-.vs
-
-# Development #
-node_modules
-*.css.map
-
-# OS Generated Files #
-Thumbs.db
 .DS_Store
-.cache
-Desktop.ini
-
-# Packages #
-*.7z
-*.zip
-*.rar
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+.idea
+.vscode
+.github
+.env
+ehthumbs.db
+Thumbs.db
+_config.yml
+node_modules
+dist
+yarn.lock
+package-lock.json
