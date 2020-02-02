@@ -1,0 +1,17 @@
+.button {
+    width: 90px;
+    height: 45px;
+    border: none;
+    border-radius: 10px;
+    background-color: #2C929F;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    outline: none;
+    transition: .5s;
+}
+.button:hover {
+    background-color: inherit;
+    color: #2C929F;
+    border: 1px solid #2C929F;
+}
