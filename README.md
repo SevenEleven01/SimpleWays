@@ -1,78 +1,68 @@
-<p>
-	<img src="https://raw.githubusercontent.com/inkogn1to/x-project/master/src/img/x-project.jpg" alt="Start HTML Template">
-</p>
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
----
+## Available Scripts
 
-<p align="center">
-	📌 <strong>RECOMMENDED TO USE WITH <a href="https://evgeniy-vashchuk.github.io/x-project-components/index.html">X-PROJECT COMPONENTS</a></strong> 📌
-</p>
+In the project directory, you can run:
 
----
+### `npm start`
 
-<h2>About</h2>
+Runs the app in the development mode.<br />
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-<p>X-Project - is starter template with basic tasks for development, which uses <a href="https://gulpjs.com">Gulp</a> to compile CSS to SASS (with <strong>SCSS</strong> syntax), add vendor prefixes, group media queries, remove comments and minimise CSS, convert ES6 into ES5 using Babel, optimising images (with <a href="https://tinypng.com/">TinyPNG</a> and <a href="https://github.com/svg/svgo">SVGO</a>), <a href="https://browsersync.io/">Browsersync</a> for live-reload while development, simple favicon generator and project archiving. It includes the following libraries and frameworks:</p>
+The page will reload if you make edits.<br />
+You will also see any lint errors in the console.
 
-<ul>
-	<li>jQuery</li>
-	<li>Bootstrap 4</li>
-	<li>Font Awesome 5</li>
-	<li>Icomoon</li>
-	<li>Slick slider</li>
-	<li>Slick lightbox</li>
-</ul>
+### `npm test`
 
-<h5>A few words about the structure:</h5>
+Launches the test runner in the interactive watch mode.<br />
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-<p><strong>src/</strong> - "source" files to build and develop the project. This is where the original source files are located, before being compiled into fewer files to <strong>dist/</strong>.</p>
-<p><strong>dist/</strong> - the compiled code ("distribution").</p>
+### `npm run build`
 
-<p>Our project follow <a href="https://sass-guidelin.es/#architecture">Sass guidelines</a>.</p>
+Builds the app for production to the `build` folder.<br />
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-<h2>How to use</h2>
+The build is minified and the filenames include the hashes.<br />
+Your app is ready to be deployed!
 
-<p>1) You must have installed:</p>
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-<ul>
-	<li><a href="https://nodejs.org/en/">Node.js</a></li>
-	<li><a href="https://gulpjs.com/">Gulp</a></li>
-</ul>
+### `npm run eject`
 
-<p>2) <a href="/inkogn1to/x-project/archive/master.zip">Download</a> or clone <strong>X-Project</strong> from Github</p>
-<p>3) Install Node Modules:</p>
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-```
-npm i
-```
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-<p>4) Run the project:</p>
+Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-```
-gulp
-```
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-<h2>Gulp tasks</h2>
+## Learn More
 
-<ul>
-	<li><strong>gulp</strong> - starting default gulp task (build, server, watch) for development</li>
-	<li><strong>gulp build</strong> - build project</li>
-	<li><strong>gulp removeDist</strong> - delete dist folder</li>
-	<li><strong>gulp img</strong> - image compression</li>
-	<li><strong>gulp favicon</strong> - favicon generator</li>
-	<li><strong>gulp zip</strong> - project archiving</li>
-</ul>
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-<h5>Additional options:</h5>
-<ul>
-	<li><strong>--prod</strong> - minification js, minification css, add vendor prefixes, group media queries, remove comments, image compression</li>
-	<li><strong>--pug</strong> - using pug preprocessor to generate html</li>
-</ul>
+To learn React, check out the [React documentation](https://reactjs.org/).
 
+### Code Splitting
 
-<h2>Changelog</h2>
+This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
 
-| Changes | Date |
-| ----- | ----- |
-| Added Pug, absolute cover mixin, mixin keyframe delay in iteration.| 26.08.2018 |
-| Release of version №2 | 15.10.2019 |
+### Analyzing the Bundle Size
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+
+### Making a Progressive Web App
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+
+### Advanced Configuration
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+
+### Deployment
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+
+### `npm run build` fails to minify
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
