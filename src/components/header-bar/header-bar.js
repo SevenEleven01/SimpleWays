@@ -6,10 +6,22 @@ function HeadBar() {
     return (
         <div className="header-bar">
             <div className="header-bar_logo">SimpleWays</div>
-            <a href="#">Карта</a>
-            <a href="#">Маршруты</a>
-            <a href="#">Новости</a>
-            <button className="header-bar_button">Sign In</button>
+            <a href="#">
+                <i className="fas fa-map"></i>
+                 Карта
+            </a>
+            <a href="#">
+                <i className="fas fa-bus"></i>
+                 Маршруты
+            </a>
+            <a href="#">
+                <i className="far fa-newspaper"></i>
+                 Новости
+            </a>
+            <button className="header-bar_button">
+                <i class="fas fa-sign-in-alt"></i>
+                 Sign
+            </button>
         </div>
     );
 }
