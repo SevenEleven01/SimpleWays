@@ -18,10 +18,10 @@ function HeadBar() {
                 <i className="far fa-newspaper"></i>
                  Новости
             </a>
-            <button className="header-bar_button">
+            <a href="/sign" className="header-bar_button">
                 <i class="fas fa-sign-in-alt"></i>
                  Sign
-            </button>
+            </a>
         </div>
     );
 }
