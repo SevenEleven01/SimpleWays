@@ -4,6 +4,9 @@ import HeadBar from '../../components/header-bar/header-bar';
 import Login from '../../components/input-login/input-login';
 import Password from '../../components/input-password/input-password';
 import Button from '../../components/button/button';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import Reg from '../reg/reg';
+
 
 function Sign() {
   return (
@@ -17,12 +20,19 @@ function Sign() {
           <Login />
           <Password />
           <div className="sign-form_buttons">
-            <a href="#" className="sign-form_add">Создать аккаунт</a>
+            <a href="/reg" className="sign-form_add">
+              Создать аккаунт
+              </a>
           <Button />
           </div>
         </div>
        </div>
      </div>
+     <Router>
+         <Switch>
+           <Route exact path="/reg" component={Reg} />
+         </Switch>
+       </Router>
     </div>
   );
 }
