@@ -3,7 +3,6 @@ import './reg.css';
 import HeadBar from '../../components/header-bar/header-bar';
 import Login from '../../components/input-login/input-login';
 import Password from '../../components/input-password/input-password';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
 
 function Reg() {

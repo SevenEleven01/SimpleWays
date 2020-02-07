@@ -1,17 +1,16 @@
-import React from 'react';
 import './sign.css';
 import HeadBar from '../../components/header-bar/header-bar';
 import Login from '../../components/input-login/input-login';
 import Password from '../../components/input-password/input-password';
 import Button from '../../components/button/button';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Reg from '../reg/reg';
-
+import React from 'react';
 
 function Sign() {
-  return (
-    <div className="wrapper">
-     <HeadBar />
+    return (
+      <div className="wrapper">
+        <HeadBar />
      <div className="sign-wrapper">
        <div className="sign">
         <div className="sign-form">
@@ -34,8 +33,12 @@ function Sign() {
          </Switch>
        </Router>
     </div>
-  );
+    );
 }
 
-
 export default Sign;
+
+
+
+
+
