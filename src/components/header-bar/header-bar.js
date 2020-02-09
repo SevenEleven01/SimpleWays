@@ -1,5 +1,6 @@
 import React from 'react';
 import './header-bar.css';
+import { Link } from 'react-router-dom';
 
 
 
@@ -11,7 +12,7 @@ function HeadBar() {
                 <i className="fas fa-map"></i>
                  Карта
             </a>
-            <a href="#">
+            <a href="/ways">
                 <i className="fas fa-bus"></i>
                  Маршруты
             </a>
@@ -19,10 +20,13 @@ function HeadBar() {
                 <i className="far fa-newspaper"></i>
                  Новости
             </a>
-            <a href="/sign" className="header-bar_button">
+            <Link to="/sign" className="header-bar_button" >
                 <i className="fas fa-sign-in-alt"></i>
                  Sign
-            </a>
+            </Link>
+            {/* <a href="/sign" className="header-bar_button" >
+                <i className="fas fa-sign-in-alt"></i>
+                 Sign</a> */}
         </div>
     );
 }

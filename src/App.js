@@ -2,10 +2,12 @@ import React from 'react';
 import './App.css';
 import Sign from './pages/sign/sign';
 import Reg from './pages/reg/reg';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
 import createBrowserHistory from 'history/createBrowserHistory';
 import HeadBar from './components/header-bar/header-bar';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import News from './components/news-shortcat/news';
+import ways from './pages/ways/ways';
 
 const history = createBrowserHistory();
 
@@ -56,13 +58,15 @@ function App() {
       </TabList>
       </Tabs>
 
-    <Router>
+      <News />
+
+
       <Switch>
-        <Route exact path="/" />
-        <Route exact path="/sign" component={Sign} />
+        <Route path="/" exact/>
+        <Route path="/sign" exact component={Sign}/>
         <Route exact path="/reg" component={Reg} />
+        <Route exact path="/ways" component={ways} />
       </Switch>
-    </Router>
 
     </div>
   );

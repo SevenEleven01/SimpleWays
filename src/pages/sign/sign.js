@@ -27,11 +27,9 @@ function Sign() {
         </div>
        </div>
      </div>
-     <Router>
          <Switch>
            <Route exact path="/reg" component={Reg} />
          </Switch>
-       </Router>
     </div>
     );
 }

@@ -1,0 +1,12 @@
+.news-wrapper {
+    margin-left: 30px;
+}
+.news-title {
+    margin-left: 30px;
+}
+.news-block {
+    width: 537px;
+    height: 213px;
+    border: 1px solid #c4c4c4;
+    border-radius: 40px;
+}
