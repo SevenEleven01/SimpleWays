@@ -1,38 +1,79 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.slideshow {
+  z-index: 0;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 49px;
+  position: relative;
+  width: 100%;
 }
-
-.App-link {
-  color: #61dafb;
+.slide {
+  width: 100%;
+  height: 400px;
+  background-color: #2C929F;
+  display: block;
+  position: relative;
+  overflow: hidden;
 }
+.slideshow__nav {
+  z-index: 1;
+  border-radius: 50%;
+  margin-top: -25px;
+  top: 50%;
+  cursor: pointer;
+  justify-content: center;
+  color: #fff;
+  align-items: center;
+  display: flex;
+  height: 50px;
+  position: absolute;
+  width: 50px;
+  transition: .3s;
+}
+.slideshow__nav:hover { background-color: #fff; color: #333; }
+.slideshow__nav.slideshow__nav--prev { left: 0; }
+.slideshow__nav.slideshow__nav--next { right: 0; }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.icon-map {
+  padding-top: 80px;
+  padding-left: 180px;
+  font-size: 200px;
+  color: #fff;
+}
+.slide-text {
+  color: #fff;
+  position: relative;
+  left: 500px;
+  bottom: 160px;
+}
+.slide-title {
+  font-size: 50px;
+  font-weight: 700;
+}
+.slide-subtitle {
+  font-size: 26px;
+}
+.slide-route {
+  margin-left: 0;
+  transition: .3s;
+}
+.slide-route:hover {
+  cursor: pointer;
+  color: #000;
+}
+ul {
+  margin-block-start: 10px;
+  list-style-type: none;
+}
+.tablist {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tablist_item {
+  margin-right: 30px;
+}
+.react-tabs__tab--selected {
+  color: #2C929F;
 }

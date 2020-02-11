@@ -9,6 +9,7 @@
     font-weight: 400;
     outline: none;
     transition: .5s;
+    font-family: Montserrat;
 }
 .button:hover {
     background-color: inherit;

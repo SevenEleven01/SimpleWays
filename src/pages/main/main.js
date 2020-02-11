@@ -1,12 +1,13 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './main.css';
 
-function Main() {
-  return (
-    <div className="wrapper">
-      
-    </div>
-  );
+
+class Main extends Component {
+  render() {
+    return (
+     <></>
+    );
+  }
 }
 
 export default Main;
