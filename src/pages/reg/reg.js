@@ -1,13 +1,14 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './reg.css';
 import HeadBar from '../../components/header-bar/header-bar';
 import Login from '../../components/input-login/input-login';
 import Password from '../../components/input-password/input-password';
 
 
-function Reg() {
-  return (
-    <div className="wrapper">
+class reg extends Component {
+  render() {
+    return (
+      <div className="wrapper">
       <HeadBar />
     <div className="reg-wrapper">
       <div className="reg">
@@ -24,7 +25,9 @@ function Reg() {
       </div>
     </div>
     </div>
-  );
+    );
+  }
 }
 
-export default Reg;
+export default reg;
+

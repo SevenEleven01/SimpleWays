@@ -1,12 +1,21 @@
 import React, { Component } from 'react';
 import HeadBar from '../../components/header-bar/header-bar';
+import './ways.css';
+import '../../components/button/button.css';
 
 export class ways extends Component {
     render() {
         return (
             <div className="ways-wrapper">
                 <HeadBar />
-                <h1>Hello</h1>
+                <div className="ways">
+                <h1 className="ways-title">Маршруты</h1>
+                <input className="ways-input" type="number" name="ways" placeholder="Введите номер маршрута"/><button className="ways-button button">Поиск</button>
+                <span className="ways-radio_block">
+                    <label className="ways-radio_block-item" ><input type="radio" name="way" />Номер маршрута</label>
+                    <label className="ways-radio_block-item" ><input type="radio" name="way" />Название остановки</label>
+                </span>
+                </div>
             </div>
         );
     }

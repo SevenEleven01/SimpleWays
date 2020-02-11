@@ -22,11 +22,12 @@ function HeadBar() {
             </a>
             <Link to="/sign" className="header-bar_button" >
                 <i className="fas fa-sign-in-alt"></i>
-                 Sign
+                 Sign In
             </Link>
             {/* <a href="/sign" className="header-bar_button" >
                 <i className="fas fa-sign-in-alt"></i>
-                 Sign</a> */}
+                 Sign In
+                </a> */}
         </div>
     );
 }

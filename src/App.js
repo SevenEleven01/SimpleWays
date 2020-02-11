@@ -1,18 +1,16 @@
 import React from 'react';
 import './App.css';
+import HeadBar from './components/header-bar/header-bar';
 import Sign from './pages/sign/sign';
 import Reg from './pages/reg/reg';
-import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
-import createBrowserHistory from 'history/createBrowserHistory';
-import HeadBar from './components/header-bar/header-bar';
+import ways from './pages/ways/ways';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import News from './components/news-shortcat/news';
-import ways from './pages/ways/ways';
+import { BrowserRouter as Router, Route, HashRouter, Switch, Link } from 'react-router-dom';
 
-const history = createBrowserHistory();
 
-function App() {
-  return (
+function Home() {
+  return(
     <div className="wrapper">
       <HeadBar />
     <Tabs>
@@ -34,7 +32,7 @@ function App() {
             <div className="slide-text">
               <span className="slide-title">Маршруты</span>
               <p className="slide-subtitle">Маршруты Крыма в одном месте</p>
-              <a className="slide-route">перейти к маршрутам &#10095;</a>
+              <Link to="/ways" className="slide-route">перейти к маршрутам &#10095;</Link>
             </div>
         </div>
         </div>
@@ -60,17 +58,23 @@ function App() {
 
       <News />
 
-
-      <Switch>
-        <Route path="/" exact/>
-        <Route path="/sign" exact component={Sign}/>
-        <Route exact path="/reg" component={Reg} />
-        <Route exact path="/ways" component={ways} />
-      </Switch>
-
     </div>
   );
 }
 
+function App() {
+    return (
+      <Router>
+       <Switch history={HashRouter}>
+          <Route path="/" exact={true} component={Home} />
+          <Route path="/sign" exact={true} component={Sign}/>
+          <Route path="/reg" exact={true} component={Reg} />
+          <Route path="/ways" exact={true} component={ways} />
+      </Switch>
+  </Router>
+    );
+}
+
 
 export default App;
+

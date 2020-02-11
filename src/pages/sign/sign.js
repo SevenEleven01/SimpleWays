@@ -2,12 +2,13 @@ import './sign.css';
 import HeadBar from '../../components/header-bar/header-bar';
 import Login from '../../components/input-login/input-login';
 import Password from '../../components/input-password/input-password';
-import Button from '../../components/button/button';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Reg from '../reg/reg';
-import React from 'react';
+import { Link } from 'react-router-dom';
+import React, { Component } from 'react';
+import '../../components/button/button.css';
 
-function Sign() {
+
+class sign extends Component {
+  render() {
     return (
       <div className="wrapper">
         <HeadBar />
@@ -19,22 +20,23 @@ function Sign() {
           <Login />
           <Password />
           <div className="sign-form_buttons">
-            <a href="/reg" className="sign-form_add">
+            <Link to="/reg" className="sign-form_add">
               Создать аккаунт
-              </a>
-          <Button />
+              </Link>
+          <button className="sign-button button">Вход</button>
           </div>
         </div>
        </div>
      </div>
-         <Switch>
+         {/* <Switch>
            <Route exact path="/reg" component={Reg} />
-         </Switch>
+         </Switch> */}
     </div>
     );
+  }
 }
 
-export default Sign;
+export default sign;
 
 
 

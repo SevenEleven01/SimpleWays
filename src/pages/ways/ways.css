@@ -1,0 +1,28 @@
+.ways-wrapper {
+    padding-top: 50px;
+}
+.ways {
+    margin: 15px;
+}
+.ways-input {
+    width: 459px;
+    height: 45px;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 20px;
+    outline: none;
+    box-shadow: 0px 3px 8px -1px rgba(0,0,0,0.45);
+}
+.ways-button {
+    margin-left: 10px;
+}
+.ways-radio_block {
+    display: flex;
+}
+.ways-radio_block-item {
+    margin-top: 15px;
+    font-weight: 700;
+    font-size: 18px;
+    margin-right: 10px;
+}
