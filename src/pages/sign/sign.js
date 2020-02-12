@@ -7,6 +7,7 @@ import React, { Component } from 'react';
 import '../../components/button/button.css';
 
 
+
 class sign extends Component {
   render() {
     return (
@@ -28,9 +29,6 @@ class sign extends Component {
         </div>
        </div>
      </div>
-         {/* <Switch>
-           <Route exact path="/reg" component={Reg} />
-         </Switch> */}
     </div>
     );
   }

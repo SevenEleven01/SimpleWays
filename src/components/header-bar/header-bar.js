@@ -1,12 +1,23 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './header-bar.css';
 import { Link } from 'react-router-dom';
 
 
 
-function HeadBar() {
-    return (
-        <div className="header-bar">
+class HeadBar extends Component {
+    constructor(props) {
+        super(props);
+        this.state = { text: "Sign In" };
+    }
+
+    OnClickButton = () => {
+        this.setState({
+            text: "Registration"
+        });
+    }
+    render() {
+        return (
+            <div className="header-bar">
             <a href="/" className="header-bar_logo">SimpleWays</a>
             <a href="#">
                 <i className="fas fa-map"></i>
@@ -20,16 +31,12 @@ function HeadBar() {
                 <i className="far fa-newspaper"></i>
                  Новости
             </a>
-            <Link to="/sign" className="header-bar_button" >
+            <Link onClick={this.OnClickButton} to="/sign" className="header-bar_button" >
                 <i className="fas fa-sign-in-alt"></i>
-                 Sign In
+                 {this.state.text}
             </Link>
-            {/* <a href="/sign" className="header-bar_button" >
-                <i className="fas fa-sign-in-alt"></i>
-                 Sign In
-                </a> */}
         </div>
-    );
+        );
+    }
 }
-
 export default HeadBar;
