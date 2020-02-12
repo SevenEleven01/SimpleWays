@@ -7,12 +7,13 @@ import ways from './pages/ways/ways';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import News from './components/news-shortcat/news';
 import { BrowserRouter as Router, Route, HashRouter, Switch, Link } from 'react-router-dom';
+import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
 
 function Home() {
   return(
     <div className="wrapper">
-      <HeadBar />
+      <HeadBar /> 
     <Tabs>
       <TabPanel className="slideshow">
         <div className="slide">
@@ -48,14 +49,14 @@ function Home() {
             </div>
         </div>
       </TabPanel>
-
+        
       <TabList className="tablist">
         <Tab className="tablist_item"><i className="far fa-map"></i></Tab>
         <Tab className="tablist_item"><i className="fas fa-bus"></i></Tab>
         <Tab className="tablist_item"><i className="far fa-newspaper"></i></Tab>
       </TabList>
       </Tabs>
-
+      
       <News />
 
     </div>

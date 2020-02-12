@@ -12,8 +12,10 @@ export class ways extends Component {
                 <h1 className="ways-title">Маршруты</h1>
                 <input className="ways-input" type="number" name="ways" placeholder="Введите номер маршрута"/><button className="ways-button button">Поиск</button>
                 <span className="ways-radio_block">
-                    <label className="ways-radio_block-item" ><input type="radio" name="way" />Номер маршрута</label>
-                    <label className="ways-radio_block-item" ><input type="radio" name="way" />Название остановки</label>
+                    <input id="input1" className="ways-radio_button" type="radio" name="way" />
+                    <label for="input1" className="ways-radio_block-item" >Номер маршрута</label>
+                    <input id="input2" className="ways-radio_button" type="radio" name="way" />
+                    <label for="input2" className="ways-radio_block-item" >Название остановки</label>
                 </span>
                 </div>
             </div>
