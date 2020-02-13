@@ -4,11 +4,15 @@ import { Link } from 'react-router-dom';
 
 
 class HeadBar extends Component {
+    constructor(props) {
+        super(props);
+        this.state = { text: "Войти" };
+    }
     render() {
         return (
             <div className="header-bar">
             <Link to="/" className="header-bar_logo">SimpleWays</Link>
-            <Link to="#">
+            <Link to="/maps">
                 <i className="fas fa-map"></i>
                  Карта
             </Link>
@@ -22,7 +26,7 @@ class HeadBar extends Component {
             </Link>
             <Link to="/sign" className="header-bar_button" >
                 <i className="fas fa-sign-in-alt"></i>
-                 Sign In
+                 {this.state.text}
             </Link>
         </div>
         );

@@ -4,6 +4,7 @@ import HeadBar from './components/header-bar/header-bar';
 import Sign from './pages/sign/sign';
 import Reg from './pages/reg/reg';
 import ways from './pages/ways/ways';
+import Maps from './pages/maps/maps';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import News from './components/news-shortcat/news';
 import { BrowserRouter as Router, Route, HashRouter, Switch, Link } from 'react-router-dom';
@@ -71,6 +72,7 @@ function App() {
           <Route path="/sign" exact={true} component={Sign}/>
           <Route path="/reg" exact={true} component={Reg} />
           <Route path="/ways" exact={true} component={ways} />
+          <Route path="/maps" exact={true} component={Maps} />
       </Switch>
   </Router>
     );
