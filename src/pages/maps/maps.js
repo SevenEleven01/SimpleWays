@@ -8,6 +8,7 @@ class Maps extends Component {
     return (
      <>
      <HeadBar/>
+     <div id="map" style={{ width: "100p%", height: "100vh" }}></div>
      </>
     );
   }

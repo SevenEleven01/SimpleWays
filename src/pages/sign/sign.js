@@ -17,10 +17,10 @@ class sign extends Component {
       <div className="wrapper">
         <div className="header-bar">
             <Link to="/" className="header-bar_logo">SimpleWays</Link>
-            <Link to="/maps">
+            <a href="/maps">
                 <i className="fas fa-map"></i>
                  Карта
-            </Link>
+            </a>
             <Link to="/ways">
                 <i className="fas fa-bus"></i>
                  Маршруты

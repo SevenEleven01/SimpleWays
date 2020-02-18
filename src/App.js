@@ -8,7 +8,7 @@ import Maps from './pages/maps/maps';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import News from './components/news-shortcat/news';
 import { BrowserRouter as Router, Route, HashRouter, Switch, Link } from 'react-router-dom';
-import { TransitionGroup, CSSTransition } from 'react-transition-group';
+// import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
 
 function Home() {
@@ -22,7 +22,7 @@ function Home() {
             <div className="slide-text">
               <span className="slide-title">Карта</span>
               <p className="slide-subtitle">Карта для просмотра маршрутов по Крыму</p>
-              <a className="slide-route">перейти к карте &#10095;</a>
+              <a href="/maps" className="slide-route">перейти к карте &#10095;</a>
             </div>
         </div>
         </TabPanel>
@@ -46,7 +46,7 @@ function Home() {
             <div className="slide-text">
               <span className="slide-title">Новости</span>
               <p className="slide-subtitle">Актуальные новости Крымкой республики</p>
-              <a className="slide-route">перейти к новостям &#10095;</a>
+              <Link className="slide-route">перейти к новостям &#10095;</Link>
             </div>
         </div>
       </TabPanel>
