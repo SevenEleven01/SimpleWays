@@ -1,35 +1,35 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './header-bar.css';
 import { Link } from 'react-router-dom';
 
 
-
-function HeadBar() {
-    return (
-        <div className="header-bar">
-            <a href="/" className="header-bar_logo">SimpleWays</a>
-            <a href="#">
+class HeadBar extends Component {
+    constructor(props) {
+        super(props);
+        this.state = { text: "Войти" };
+    }
+    render() {
+        return (
+            <div className="header-bar">
+            <Link to="/" className="header-bar_logo">SimpleWays</Link>
+            <a href="/maps">
                 <i className="fas fa-map"></i>
                  Карта
             </a>
-            <a href="/ways">
+            <Link to="/ways">
                 <i className="fas fa-bus"></i>
                  Маршруты
-            </a>
-            <a href="#">
+            </Link>
+            <Link to="#">
                 <i className="far fa-newspaper"></i>
                  Новости
-            </a>
+            </Link>
             <Link to="/sign" className="header-bar_button" >
                 <i className="fas fa-sign-in-alt"></i>
-                 Sign In
+                 {this.state.text}
             </Link>
-            {/* <a href="/sign" className="header-bar_button" >
-                <i className="fas fa-sign-in-alt"></i>
-                 Sign In
-                </a> */}
         </div>
-    );
+        );
+    }
 }
-
 export default HeadBar;
