@@ -10,10 +10,17 @@
 .slide {
   width: 100%;
   height: 400px;
-  background-color: #2C929F;
   display: block;
   position: relative;
   overflow: hidden;
+  background: linear-gradient(270deg, #46bed6, #2039b3, #501ed8);
+  background-size: 600% 600%;
+  animation: example 30s ease infinite;
+}
+@keyframes example {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
 }
 .slideshow__nav {
   z-index: 1;
@@ -77,17 +84,39 @@ ul {
 .react-tabs__tab--selected {
   color: #2C929F;
 }
-.option-enter {
+
+/* cssTransition */
+/* Tabs */
+.fade-appear {
   opacity: 0;
+  z-index: 1;
 }
-.option-enter.option-enter-active {
-  opacity: 1;
-  transition: opacity 2s ease;
+.fade-appear.fade-appear-active {
+  opacity: 1; 
+  transition: opacity 300ms linear;
 }
-.option-exit {
-  opacity: 1;
-}
-.option-exit.option-exit-active {
+.fade-enter {
   opacity: 0;
-  transition: opacity 2s ease;
+  z-index: 1;
+}
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms linear;
+}
+/* Router */
+.open-appear {
+  opacity: 0;
+  z-index: 1;
+}
+.open-appear.open-appear-active {
+  opacity: 1; 
+  transition: opacity 300ms linear;
+}
+.open-enter {
+  opacity: 0;
+  z-index: 1;
+}
+.open-enter.open-enter-active {
+  opacity: 1;
+  transition: opacity 300ms linear;
 }

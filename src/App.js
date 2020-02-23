@@ -8,7 +8,7 @@ import Maps from './pages/maps/maps';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import News from './components/news-shortcat/news';
 import { BrowserRouter as Router, Route, HashRouter, Switch, Link } from 'react-router-dom';
-// import { TransitionGroup, CSSTransition } from 'react-transition-group';
+import {CSSTransition} from 'react-transition-group';
 
 
 function Home() {
@@ -17,6 +17,13 @@ function Home() {
       <HeadBar /> 
     <Tabs>
       <TabPanel className="slideshow">
+      <CSSTransition
+      in={Tabs}
+      appear={true}
+      timeout={300}
+      classNames="fade"
+      unmountOnExit
+      >
         <div className="slide">
           <i className="far fa-map icon-map"></i>
             <div className="slide-text">
@@ -25,9 +32,16 @@ function Home() {
               <a href="/maps" className="slide-route">перейти к карте &#10095;</a>
             </div>
         </div>
+        </CSSTransition>
         </TabPanel>
-
+        
         <TabPanel>
+        <CSSTransition
+      in={Tabs}
+      appear={true}
+      timeout={300}
+      classNames="fade"
+      >
           <div className="slide-wrapper">
         <div className="slide">
         <i className="fas fa-bus icon-map"></i>
@@ -38,9 +52,16 @@ function Home() {
             </div>
         </div>
         </div>
+        </CSSTransition>
         </TabPanel>
 
         <TabPanel>
+        <CSSTransition
+        in={Tabs}
+        appear={true}
+        timeout={300}
+        classNames="fade"
+      >
         <div className="slide">
         <i className="far fa-newspaper icon-map"></i>
             <div className="slide-text">
@@ -49,8 +70,9 @@ function Home() {
               <Link className="slide-route">перейти к новостям &#10095;</Link>
             </div>
         </div>
+        </CSSTransition>
       </TabPanel>
-        
+      
       <TabList className="tablist">
         <Tab className="tablist_item"><i className="far fa-map"></i></Tab>
         <Tab className="tablist_item"><i className="fas fa-bus"></i></Tab>
@@ -66,6 +88,12 @@ function Home() {
 
 function App() {
     return (
+      <CSSTransition
+        in={App}
+        appear={true}
+        timeout={300}
+        classNames="open"
+      >
       <Router>
        <Switch history={HashRouter}>
           <Route path="/" exact={true} component={Home} />
@@ -75,6 +103,7 @@ function App() {
           <Route path="/maps" exact={true} component={Maps} />
       </Switch>
   </Router>
+  </CSSTransition>
     );
 }
 

@@ -3,11 +3,13 @@
     position: fixed;
     display: flex;
     align-items: center;
-    background-color: #2C929F;
     width: 100%;
     height: 50px;
     color: #fff;
     z-index: 10;
+    background: linear-gradient(270deg, #46bed6, #2039b3, #501ed8);
+    background-size: 600% 600%;
+    animation: example 30s ease infinite;
 }
 .header-bar_logo {
     cursor: pointer;
