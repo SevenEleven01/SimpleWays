@@ -71,3 +71,20 @@
 .ways-radio_button:checked + label:after {
     opacity: 1;
 }
+@media screen and (max-width: 375px) {
+    .ways {
+        margin: 10px;
+    }
+    .ways-input {
+        width: 260px;
+        height: 35px;
+    }
+    .ways-button {
+        width: 70px;
+        height: 37px;
+        margin-left: 5px;
+    }
+    .ways-radio_block-item {
+        font-size: 13px;
+    }
+}

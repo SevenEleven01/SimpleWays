@@ -82,3 +82,32 @@
   color: #2C929F;
   border: 1px solid #2C929F;
 }
+@media screen and (max-width: 375px) {
+  .name {
+    width: 300px;
+    height: 35px;
+  }
+  .surname {
+    width: 300px;
+    height: 35px;
+  }
+  .acc-pass {
+    width: 300px;
+    height: 35px;
+  }
+  .button-reg {
+    width: 315px;
+    height: 35px;
+    margin-left: 0;
+  }
+  .reg {
+    width: 350px;
+    height: 100vh;
+  }
+  .reg-form_title {
+    font-size: 30px;
+  }
+  .reg-form_subtitle {
+    font-size: 16px;
+  }
+}

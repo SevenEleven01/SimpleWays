@@ -4,6 +4,7 @@ import Password from '../../components/input-password/input-password';
 import { Link } from 'react-router-dom';
 import React, { Component } from 'react';
 import '../../components/button/button.css';
+import { slide as Menu } from 'react-burger-menu';
 
 
 
@@ -15,8 +16,12 @@ class sign extends Component {
   render() {
     return (
       <div className="wrapper">
-        <div className="header-bar">
-            <Link to="/" className="header-bar_logo">SimpleWays</Link>
+        <>
+            <Menu className="menu">
+            <Link to="/reg" className="header-bar_button" >
+            <i className="fas fa-sign-in-alt"></i>
+                 {this.state.text}
+            </Link>
             <a href="/maps">
                 <i className="fas fa-map"></i>
                  Карта
@@ -29,11 +34,13 @@ class sign extends Component {
                 <i className="far fa-newspaper"></i>
                  Новости
             </Link>
-            <Link to="/reg" className="header-bar_button" >
-            <i className="fas fa-sign-in-alt"></i>
-                 {this.state.text}
-            </Link>
-        </div>
+            
+            
+            </Menu>
+            <div className="header-bar">
+            <Link to="/" className="header-bar_logo">SimpleWays</Link>
+            </div>
+        </>
      <div className="sign-wrapper">
        <div className="sign">
         <div className="sign-form">

@@ -13,17 +13,21 @@
     animation: example 30s ease infinite;
 }
 .header-bar_logo {
+    outline: none;
+    padding-bottom: 0;
     cursor: pointer;
     font-size: 30px;
     margin: 5px 5px 5px 15px;
 }
 .header-bar_logo:hover {
-    transform: scale(.93, .93);
+    transform: scale(1.1, 1.1);
 }
 a {
+    outline: none;
+    margin-bottom: 20px;
     margin-left: 30px;
     color: #fff;
-    font-size: 20px;
+    font-size: 25px;
     transition: .5s;
     text-decoration: none;
 }
@@ -44,7 +48,7 @@ a:hover {
 .header-bar_button:hover {
     color: #000;
 }
-/*  */
+/* Burger-menu */
 .menu {
     top: 0;
 }
@@ -73,40 +77,47 @@ a:hover {
     height: 100%;
   }
   .bm-menu {
+    border-radius: 20px;
     position: relative;
     left: 0;
-    background: #373a47;
-    padding: 2.5em 1.5em 0;
-    font-size: 1.15em;
+    background: rgb(82, 99, 126);
+    padding: 10px;
+    /* font-size: 100px; */
   }
   .bm-morph-shape {
     fill: #373a47;
   }
-  .bm-item-list {
-      overflow: hidden;
-    color: #b8b7ad;
-    padding: 0.8em;
-  }
   .bm-item {
+    padding-top: 10px;
     display: inline-block;
   }
   .bm-overlay {
+    overflow: hidden;
       top: 0;
     background: rgba(0, 0, 0, 0.3);
   }
 @media screen and (max-width: 375px) {
+  .bm-item {
+    padding-top: 10px;
+    padding-left: 10px;
+  }
+
     .bm-burger-button {
         width: 26px;
         height: 20px;
     }
     .header-bar_logo {
+        padding-bottom: 0;
         font-size: 16px;
     }
     a {
+        outline: none;
+        padding-bottom: 10px;
         margin-left: 5px;
-        font-size: 14px;
+        font-size: 25px;
     }
     .header-bar_button {
-        font-size: 16px;
+        outline: none;
+        font-size: 25px;
     }
 }
