@@ -10,3 +10,15 @@
     border: 1px solid #c4c4c4;
     border-radius: 40px;
 }
+@media screen and (max-width: 375px) {
+    .news-wrapper {
+        margin-left: 5px;
+    }
+    .news-title {
+        font-size: 18px;
+    }
+    .news-block {
+        width: 237px;
+        height: 113px;
+    }
+}

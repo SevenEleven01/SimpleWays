@@ -13,8 +13,10 @@ import {CSSTransition} from 'react-transition-group';
 
 function Home() {
   return(
-    <div className="wrapper">
-      <HeadBar /> 
+    <>
+    <HeadBar />
+    <div className="wrapper"> 
+      <div className="wrapper-slideshow">
     <Tabs>
       <TabPanel className="slideshow">
       <CSSTransition
@@ -73,16 +75,19 @@ function Home() {
         </CSSTransition>
       </TabPanel>
       
+      
       <TabList className="tablist">
         <Tab className="tablist_item"><i className="far fa-map"></i></Tab>
         <Tab className="tablist_item"><i className="fas fa-bus"></i></Tab>
         <Tab className="tablist_item"><i className="far fa-newspaper"></i></Tab>
       </TabList>
       </Tabs>
+      </div>
       
       <News />
 
     </div>
+    </>
   );
 }
 
