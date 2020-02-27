@@ -12,7 +12,7 @@ class HeadBar extends Component {
         return (
             <>
             <Menu className="menu">
-            <Link to="/sign" className="header-bar_button" >
+            <Link to="/sign" className="header-bar_button bm-item" >
                 <i className="fas fa-sign-in-alt"></i>
                  {this.state.text}
             </Link>

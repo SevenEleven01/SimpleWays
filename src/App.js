@@ -69,7 +69,7 @@ function Home() {
             <div className="slide-text">
               <span className="slide-title">Новости</span>
               <p className="slide-subtitle">Актуальные новости Крымкой республики</p>
-              <Link className="slide-route">перейти к новостям &#10095;</Link>
+              <Link to="#" className="slide-route">перейти к новостям &#10095;</Link>
             </div>
         </div>
         </CSSTransition>
@@ -93,12 +93,6 @@ function Home() {
 
 function App() {
     return (
-      <CSSTransition
-        in={App}
-        appear={true}
-        timeout={300}
-        classNames="open"
-      >
       <Router>
        <Switch history={HashRouter}>
           <Route path="/" exact={true} component={Home} />
@@ -108,7 +102,6 @@ function App() {
           <Route path="/maps" exact={true} component={Maps} />
       </Switch>
   </Router>
-  </CSSTransition>
     );
 }
 

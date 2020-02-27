@@ -1,10 +1,10 @@
 import './sign.css';
-import Login from '../../components/input-login/input-login';
-import Password from '../../components/input-password/input-password';
 import { Link } from 'react-router-dom';
 import React, { Component } from 'react';
 import '../../components/button/button.css';
 import { slide as Menu } from 'react-burger-menu';
+import '../../components/input-login.css';
+import '../../components/input-password.css';
 
 
 
@@ -34,8 +34,6 @@ class sign extends Component {
                 <i className="far fa-newspaper"></i>
                  Новости
             </Link>
-            
-            
             </Menu>
             <div className="header-bar">
             <Link to="/" className="header-bar_logo">SimpleWays</Link>
@@ -46,8 +44,8 @@ class sign extends Component {
         <div className="sign-form">
           <h2 className="sign-form_title">Вход</h2>
           <p className="sign-form_subtitle">Используйте аккаунт SimpleWays</p>
-          <Login />
-          <Password />
+          <input className="login" type="login" name="login" placeholder="Введите адрес эл. почты" />
+          <input className="password" type="password" name="password" placeholder="Введите пароль"/>
           <div className="sign-form_buttons">
             <Link to="/reg" className="sign-form_add">
               Создать аккаунт

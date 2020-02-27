@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import './reg.css';
 import HeadBar from '../../components/header-bar/header-bar';
-import Login from '../../components/input-login/input-login';
-import Password from '../../components/input-password/input-password';
 
 
 class reg extends Component {
@@ -17,8 +15,8 @@ class reg extends Component {
           <p className="reg-form_subtitle">Создайте аккаунт SimpleWays</p>
           <input className="name" type="name" name="name" placeholder="Имя" />
           <input className="surname" type="surname" name="surname" placeholder="Фамилия" />
-          <Login />
-          <Password />
+          <input className="login" type="login" name="login" placeholder="Введите адрес эл. почты" />
+          <input className="password" type="password" name="password" placeholder="Введите пароль"/>
           <input className="acc-pass" type="password" name="acc-pass" placeholder="Подтвердите пароль" />
           <button className="button-reg">Зарегестрироваться</button>
         </div>
