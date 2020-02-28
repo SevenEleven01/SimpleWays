@@ -36,7 +36,7 @@ handlePasswordChange(event) {
     return (
       <div className="wrapper">
 
-        {/* This NavBar for work sign and reg */}
+        {/* This NavBar for work sign and reg and refresh for Map */}
 
         <>
             <Menu className="menu">
@@ -74,6 +74,11 @@ handlePasswordChange(event) {
           
           <form onSubmit={this.handleSubmit}>
             <input 
+              pattern={[
+                "^.{8,}$",
+                "(?=.*\\d)",
+                "(?=.*[A-Z])"
+              ]} //no work
               className="login" 
               type="login" 
               name="login" 
