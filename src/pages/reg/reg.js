@@ -58,7 +58,7 @@ class reg extends Component {
 
         <form onSubmit={this.handleSubmit}>
           <input
-           className="name"
+           className="login"
             type="name"
              name="name"
               placeholder="Имя"
@@ -66,7 +66,7 @@ class reg extends Component {
               onChange={this.handleNameChange}
                />
           <input
-           className="surname"
+           className="login"
             type="surname"
              name="surname"
               placeholder="Фамилия"
@@ -90,7 +90,7 @@ class reg extends Component {
               onChange={this.handlePasswordChange}
               />
           <input
-           className="acc-pass"
+           className="password"
             type="password"
              name="acc-pass"
               placeholder="Подтвердите пароль"

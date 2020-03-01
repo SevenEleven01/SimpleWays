@@ -19,3 +19,10 @@
         box-shadow: none;
     }
 }
+@media screen and (max-width: 320px) {
+    .login {
+        margin-bottom: 10px;
+        width: 260px;
+        height: 30px;
+    }
+}
