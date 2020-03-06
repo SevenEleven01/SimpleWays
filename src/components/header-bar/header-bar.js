@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './header-bar.css';
 import { Link } from 'react-router-dom';
-
+import { slide as Menu } from 'react-burger-menu';
 
 class HeadBar extends Component {
     constructor(props) {
@@ -10,8 +10,12 @@ class HeadBar extends Component {
     }
     render() {
         return (
-            <div className="header-bar">
-            <Link to="/" className="header-bar_logo">SimpleWays</Link>
+            <>
+            <Menu className="menu">
+            <Link to="/sign" className="header-bar_button bm-item" >
+                <i className="fas fa-sign-in-alt"></i>
+                 {this.state.text}
+            </Link>
             <a href="/maps">
                 <i className="fas fa-map"></i>
                  Карта
@@ -24,11 +28,11 @@ class HeadBar extends Component {
                 <i className="far fa-newspaper"></i>
                  Новости
             </Link>
-            <Link to="/sign" className="header-bar_button" >
-                <i className="fas fa-sign-in-alt"></i>
-                 {this.state.text}
-            </Link>
-        </div>
+            </Menu>
+            <div className="header-bar">
+            <Link to="/" className="header-bar_logo">SimpleWays</Link>
+            </div>
+            </>
         );
     }
 }

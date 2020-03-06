@@ -16,3 +16,10 @@
     color: #2C929F;
     border: 1px solid #2C929F;
 }
+@media screen and (max-width: 375px) {
+    .button {
+        font-size: 16px;
+        width: 60px;
+        height: 35px;
+    }
+}

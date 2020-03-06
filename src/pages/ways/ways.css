@@ -1,51 +1,53 @@
 .ways-wrapper {
     padding-top: 50px;
 }
+
 .ways {
     margin: 15px;
 }
-.ways-input {
-    width: 459px;
-    height: 45px;
-    padding-left: 15px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    font-size: 20px;
-    outline: none;
-    box-shadow: 0px 3px 8px -1px rgba(0,0,0,0.45);
-}
+
 .ways-button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
     margin-left: 10px;
 }
+
 .ways-radio_block {
     display: flex;
 }
+
 .ways-radio_block-item {
     margin-top: 15px;
     font-weight: 700;
     font-size: 18px;
     margin-right: 10px;
 }
+
 .ways-radio_button {
     vertical-align: top;
     width: 18px;
     height: 18px;
     margin: 0 3px 0 0;
 }
-.ways-radio_button + label {
+
+.ways-radio_button+label {
     cursor: pointer;
     margin-bottom: 12px;
     display: block;
 }
+
 .ways-radio_button:not(checked) {
     position: absolute;
     opacity: 0;
 }
-.ways-radio_button:not(checked) + label {
+
+.ways-radio_button:not(checked)+label {
     position: relative;
     padding: 0 0 0 35px;
 }
-.ways-radio_button:not(checked) + label:before {
+
+.ways-radio_button:not(checked)+label:before {
     content: '';
     position: absolute;
     top: -3px;
@@ -56,7 +58,8 @@
     border-radius: 50%;
     background: #FFF;
 }
-.ways-radio_button:not(checked) + label:after {
+
+.ways-radio_button:not(checked)+label:after {
     content: '';
     position: absolute;
     top: 1px;
@@ -68,6 +71,58 @@
     opacity: 0;
     transition: all .2s;
 }
-.ways-radio_button:checked + label:after {
+
+.ways-radio_button:checked+label:after {
     opacity: 1;
+}
+
+@media screen and (max-width: 375px) {
+    .ways {
+        margin: 10px;
+    }
+
+    .ways-input {
+        width: 280px;
+        margin-bottom: 0;
+    }
+    .ways-button {
+        width: 45px;
+        height: 45px;
+        margin-left: 5px;
+    }
+
+    .ways-radio_block-item {
+        font-size: 13px;
+    }
+}
+@media screen and (max-width: 360px) {
+    .ways-input {
+        width: 270px;
+    }
+    .ways-radio_block-item {
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .ways-title {
+        font-size: 30px;
+    }
+    .ways {
+        margin: 5px;
+    }
+    .ways-input {
+        padding-left: 5px;
+        width: 255px;
+    }
+    .ways-button {
+        width: 35px;
+        height: 35px;
+    }
+    .ways-radio_button {
+        width: 10px;
+        height: 10px;
+    }
+    .ways-radio_block-item {
+        font-size: 11px;
+    }
 }
