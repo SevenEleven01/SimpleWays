@@ -39,8 +39,32 @@ handlePasswordChange(event) {
         {/* This NavBar for work sign and reg and refresh for Map */}
 
         <>
-            <Menu className="menu">
+        <div className="header-bar">
+            <div className="header-bar_menu">
+            <Link to="/" className="header-bar_logo">SimpleWays</Link>
+            <a href="/maps">
+                <i className="fas fa-map"></i>
+                 Карта
+            </a>
+            <Link to="/ways">
+                <i className="fas fa-bus"></i>
+                 Маршруты
+            </Link>
+            <Link to="#">
+                <i className="far fa-newspaper"></i>
+                 Новости
+            </Link>
             <Link to="/reg" className="header-bar_button" >
+                <i className="fas fa-sign-in-alt"></i>
+                 {this.state.text}
+            </Link>
+            </div>
+            </div>
+
+            {/* Menu */}
+
+            <Menu className="menu">
+            <Link to="/reg" className="bm-item" >
             <i className="fas fa-sign-in-alt"></i>
                  {this.state.text}
             </Link>
@@ -57,8 +81,8 @@ handlePasswordChange(event) {
                  Новости
             </Link>
             </Menu>
-            <div className="header-bar">
-            <Link to="/" className="header-bar_logo">SimpleWays</Link>
+            <div className="header-title">
+            <Link to="/" className="header-title_logo">SimpleWays</Link>
             </div>
         </>
 

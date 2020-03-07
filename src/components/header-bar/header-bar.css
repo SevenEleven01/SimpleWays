@@ -3,7 +3,6 @@
   position: fixed;
   display: flex;
   align-items: center;
-  justify-content: center;
   width: 100%;
   height: 50px;
   color: #fff;
@@ -12,7 +11,9 @@
   background-size: 600% 600%;
   animation: example 30s ease infinite;
 }
-
+.header-title {
+  display: none;
+}
 .header-bar_logo {
   outline: none;
   padding-bottom: 0;
@@ -24,10 +25,18 @@
 .header-bar_logo:hover {
   transform: scale(1.1, 1.1);
 }
+.header-bar_button {
+  position: absolute;
+  margin-right: 10px;
+  font-weight: 700;
+  right: 0;
+}
+.header-bar_button:hover {
+  color: #000;
+}
 
 a {
   outline: none;
-  margin-bottom: 20px;
   margin-left: 30px;
   color: #fff;
   font-size: 25px;
@@ -44,6 +53,7 @@ a:hover {
 }
 
 .bm-burger-button {
+  display: none;
   position: fixed;
   width: 26px;
   height: 20px;
@@ -97,13 +107,6 @@ a:hover {
   color: #000000;
   display: inline-block;
 }
-.header-bar_button {
-  font-weight: 700;
-  font-size: 25px;
-}
-.header-bar_button:hover {
-  color: #000;
-}
 
 .bm-overlay {
   overflow: hidden;
@@ -112,6 +115,23 @@ a:hover {
 }
 
 @media screen and (max-width: 375px) {
+  .header-title {
+    top: 0;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    color: #fff;
+    z-index: 10;
+  }
+  .header-bar_menu {
+    display: none;
+  }
+  .bm-burger-button {
+    display: block;
+  }
   .bm-item-list {
     padding-left: 10px;
     padding-top: 50px;
@@ -128,8 +148,11 @@ a:hover {
     height: 20px;
   }
 
-  .header-bar_logo {
+  .header-title_logo {
+    outline: none;
     padding-bottom: 0;
+    cursor: pointer;
+    margin: 5px 5px 5px 15px;
     font-size: 16px;
   }
 
