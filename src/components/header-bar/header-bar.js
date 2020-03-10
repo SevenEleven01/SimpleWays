@@ -26,7 +26,7 @@ class HeadBar extends Component {
                 <i className="far fa-newspaper"></i>
                  Новости
             </Link>
-            <Link to="/sign" className="header-bar_button" >
+            <Link to="/sign" className="header-bar_button">
                 <i className="fas fa-sign-in-alt"></i>
                  {this.state.text}
             </Link>

@@ -10,7 +10,6 @@ import News from './components/news-shortcat/news';
 import { BrowserRouter as Router, Route, HashRouter, Switch, Link } from 'react-router-dom';
 import {CSSTransition} from 'react-transition-group';
 
-
 function Home() {
   return(
     <>
@@ -36,14 +35,14 @@ function Home() {
         </div>
         </CSSTransition>
         </TabPanel>
-        
+
         <TabPanel>
         <CSSTransition
-      in={Tabs}
-      appear={true}
-      timeout={300}
-      classNames="fade"
-      >
+        in={Tabs}
+        appear={true}
+        timeout={300}
+        classNames="fade"
+        >
           <div className="slide-wrapper">
         <div className="slide">
         <i className="fas fa-bus icon-map"></i>
@@ -74,7 +73,6 @@ function Home() {
         </div>
         </CSSTransition>
       </TabPanel>
-      
       
       <TabList className="tablist">
         <Tab className="tablist_item"><i className="far fa-map"></i></Tab>
