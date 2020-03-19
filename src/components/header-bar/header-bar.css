@@ -2,8 +2,9 @@
   top: 0;
   position: fixed;
   display: flex;
-  text-align: center;
+  /* text-align: center; */
   align-items: center;
+  /* justify-content: space-between; */
   width: 100%;
   height: 50px;
   color: #fff;
@@ -30,8 +31,9 @@
 }
 
 .header-bar_button {
-  position: absolute;
-  margin-right: 10px;
+  position: fixed;
+  margin-top: 5px;
+  margin-right: 20px;
   right: 0;
 }
 
