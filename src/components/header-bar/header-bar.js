@@ -28,6 +28,10 @@ class HeadBar extends Component {
                             <i className="far fa-newspaper"></i>
                             Новости
                         </Link>
+                        <Link to="/corona">
+                        <i class="fas fa-virus"></i>
+                            О COVID-19
+                        </Link>
                         <Link to="/sign" className="header-bar_button">
                             <i className="fas fa-sign-in-alt"></i>
                             {this.state.text}
@@ -54,6 +58,10 @@ class HeadBar extends Component {
                         <i className="far fa-newspaper"></i>
                         Новости
                     </Link>
+                    <Link to="/corona">
+                        <i class="fas fa-virus"></i>
+                            О COVID-19
+                        </Link>
                 </Menu>
                 <div className="header-title">
                     <Link to="/" className="header-title_logo">SimpleWays</Link>
