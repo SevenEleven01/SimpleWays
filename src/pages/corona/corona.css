@@ -10,16 +10,29 @@
 .coronaCard {
     padding-top: 10px;
     text-align: center;
-    width: 350px;
+    max-width: 305px;
+    min-width: 305px;
     height: 250px;
-    overflow: scroll;
+    overflow: hidden;
     border-radius: 10px;
-    margin: 0 20px;
+    margin: 0 10px;
     background: #EAECEA;
     -webkit-box-shadow: 2px 2px 15px 0.5px #ccc;
     -moz-box-shadow: 2px 2px 15px 0.5px #ccc;
     box-shadow: 2px 2px 15px 0.5px #ccc;
     transition: .5s linear;
+}
+.coronaCard2 {
+    width: 370px;
+    height: 100%;
+    padding-right: 0px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.coronaCard3 {
+    width: 100%;
+    margin: 0 0px;
+    padding-right: 17px;
 }
 .coronaCard:active {
     height: auto;
@@ -27,14 +40,17 @@
 .coronaIcon{
     font-size: 36px;
     color: #46bed6;
+    padding-right: 30px;
+
 }
 .coronaCardTitle {
     text-align: center;
     font-size: 20px;
+    padding-right: 50px;
 }
 .coronaCardSubtitle {
     font-size: 18px;
-    padding: 5px 20px 0 20px;
+    padding: 5px 70px 0 20px;
     line-height: 1.7;
     text-align: justify;
 }

@@ -22,6 +22,8 @@ export const Corona = () => {
                 <p className="coronaSubtitle">Основные меры предосторожности для защиты от новой коронавирусной инфекции:</p>
                 <div className="coronaCardWrapper">
                     <div className="coronaCard">
+                        <div className="coronaCard2">
+                            <div className="coronaCard3">
                         <i class="fas fa-hands-wash coronaIcon"></i>
                         <h2 className="coronaCardTitle">Регулярно мойте руки</h2>
                         <p className="coronaCardSubtitle">
@@ -30,8 +32,12 @@ export const Corona = () => {
                             Если на поверхности рук присутствует вирус, то обработка рук спиртосодержащим
                             средством или мытье их с мылом убьет его.
                         </p>
+                        </div>
+                        </div>
                     </div>
                     <div className="coronaCard">
+                    <div className="coronaCard2">
+                            <div className="coronaCard3">
                         <i class="fas fa-head-side-virus coronaIcon"></i>
                         <h2 className="coronaCardTitle">Соблюдайте дистанцию в общественных местах</h2>
                         <p className="coronaCardSubtitle">
@@ -43,8 +49,12 @@ export const Corona = () => {
                             вы находитесь слишком близко к такому человеку, то можете заразиться вирусом при
                             вдыхании воздуха.
                         </p>
+                        </div>
+                        </div>
                     </div>
                     <div className="coronaCard">
+                    <div className="coronaCard2">
+                            <div className="coronaCard3">
                         <i class="fas fa-shield-virus coronaIcon"></i>
                         <h2 className="coronaCardTitle">По возможности, не трогайте руками глаза, нос и рот</h2>
                         <p className="coronaCardSubtitle">
@@ -53,8 +63,12 @@ export const Corona = () => {
                             Прикасаясь содержащими инфекцию руками к глазам, носу или рту, можно перенести
                             вирус с кожи рук в организм.
                         </p>
+                        </div>
+                        </div>
                     </div>
                     <div className="coronaCard">
+                    <div className="coronaCard2">
+                            <div className="coronaCard3">
                         <i class="fas fa-head-side-mask coronaIcon"></i>
                         <h2 className="coronaCardTitle">Соблюдайте правила респираторной гигиены</h2>
                         <p className="coronaCardSubtitle">
@@ -67,6 +81,8 @@ export const Corona = () => {
                             или чихании прикрывать нос и рот рукой, микробы могут попасть на ваши руки, а
                             затем на предметы или людей, к которым вы прикасаетесь.
                         </p>
+                        </div>
+                        </div>
                     </div>
                 </div>
                 <p
