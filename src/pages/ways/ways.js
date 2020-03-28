@@ -2,12 +2,26 @@ import React, {Component} from 'react';
 import HeadBar from '../../components/header-bar/header-bar';
 import './ways.css';
 import '../../components/button/button.css';
+import {
+    Input,
+    Col,
+    Row,
+    Select,
+    InputNumber,
+    DatePicker,
+    AutoComplete,
+    Cascader
+} from 'antd';
+
+import WaysItem from '../../components/waysItem/waysItem';
+
+const { Option } = Select;
 
 export class ways extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            numWay: ''
+            numWay: '',
         }
         this.handleSubmit = this
             .handleSubmit
@@ -28,8 +42,20 @@ export class ways extends Component {
         return (
             <div className="ways-wrapper">
                 <HeadBar/>
-                <div className="ways">
+                <div className="ways site-input-group-wrapper">
                     <h1 className="ways-title">Маршруты</h1>
+
+                        {/* For admin */}
+
+                        <Input.Group compact className="inputGroup">
+                        <Select defaultValue="Option1" className="inputGroupOption">
+                            <Option value="Option1">Маршрут</Option>
+                            <Option value="Option2">Название остановки</Option>
+                        </Select>
+                        <Input defaultValue=""/>
+                        <InputNumber className="inputGroupNumber" />
+                    </Input.Group>
+
                     <form onSubmit={this.handleSubmit}>
                         <input
                             className="login ways-input"
@@ -48,6 +74,26 @@ export class ways extends Component {
                             <label for="input2" className="ways-radio_block-item">Название остановки</label>
                         </span>
                     </form>
+
+                    <div className="waysOutput">
+                        <WaysItem
+                            items={[
+                                {
+                                    title: "Марьино-Западная",
+                                    number: "63",
+                                },
+                                {
+                                    title: "Марьино-Западная",
+                                    number: "63",
+                                },
+                                {
+                                    title: "Марьино-Западная",
+                                    number: "63",
+                                },
+                            ]}
+                         />
+                    </div>
+
                 </div>
             </div>
         );

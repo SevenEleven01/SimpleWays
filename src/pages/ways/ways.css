@@ -126,3 +126,17 @@
         font-size: 11px;
     }
 }
+  .inputGroup {
+      display: flex;
+  }
+  .inputGroupOption {
+      width: 150px;
+      height: 60px;
+      text-align: center;
+      display: flex;
+      border: 1px solid #ccc;
+  }
+  .inputGroupNumber {
+      width: 50px;
+      height: 40px;
+  }

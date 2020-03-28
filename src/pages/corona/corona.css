@@ -6,6 +6,7 @@
 }
 .coronaCardWrapper {
     display: flex;
+    overflow: scroll;
 }
 .coronaCard {
     padding-top: 10px;
@@ -50,7 +51,7 @@
 }
 .coronaCardSubtitle {
     font-size: 18px;
-    padding: 5px 70px 0 20px;
+    padding: 5px 75px 0 20px;
     line-height: 1.7;
     text-align: justify;
 }
