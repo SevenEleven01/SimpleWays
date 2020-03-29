@@ -167,7 +167,7 @@ ul {
     font-size: 14px;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (min-width: 320px) {
   .slide {
     height: 150px;
   }

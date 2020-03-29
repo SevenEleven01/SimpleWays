@@ -22,3 +22,15 @@
         height: 113px;
     }
 }
+@media screen and (min-width: 375px) {
+    .news-wrapper {
+        margin-left: 5px;
+    }
+    .news-title {
+        font-size: 18px;
+    }
+    .news-block {
+        width: 237px;
+        height: 113px;
+    }
+}

@@ -47,14 +47,14 @@ export class ways extends Component {
 
                         {/* For admin */}
 
-                        <Input.Group compact className="inputGroup">
+                        {/* <Input.Group compact className="inputGroup">
                         <Select defaultValue="Option1" className="inputGroupOption">
                             <Option value="Option1">Маршрут</Option>
                             <Option value="Option2">Название остановки</Option>
                         </Select>
                         <Input defaultValue=""/>
                         <InputNumber className="inputGroupNumber" />
-                    </Input.Group>
+                    </Input.Group> */}
 
                     <form onSubmit={this.handleSubmit}>
                         <input

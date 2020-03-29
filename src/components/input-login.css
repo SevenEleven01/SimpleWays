@@ -19,7 +19,7 @@
         box-shadow: none;
     }
 }
-@media screen and (max-width: 320px) {
+@media screen and (min-width: 320px) {
     .login {
         margin-bottom: 10px;
         width: 260px;

@@ -62,7 +62,7 @@
       left: 65px;
     }
   }
-  @media screen and (max-width: 320px) {
+  @media screen and (min-width: 320px) {
     .sign {
       width: 300px;
     }
