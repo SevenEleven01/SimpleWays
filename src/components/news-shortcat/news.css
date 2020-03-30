@@ -5,6 +5,7 @@
     margin-left: 30px;
 }
 .news-block {
+    text-align: center;
     width: 537px;
     height: 213px;
     border: 1px solid #c4c4c4;
@@ -32,5 +33,6 @@
     .news-block {
         width: 237px;
         height: 113px;
+        border-radius: 15px;
     }
 }

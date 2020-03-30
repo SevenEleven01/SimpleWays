@@ -90,6 +90,30 @@ export class ways extends Component {
                                     title: "Марьино-Западная",
                                     number: "63",
                                 },
+                                {
+                                    title: "Марьино-Западная",
+                                    number: "63",
+                                },
+                                {
+                                    title: "Марьино-Западная",
+                                    number: "63",
+                                },
+                                {
+                                    title: "Марьино-Западная",
+                                    number: "63",
+                                },
+                                {
+                                    title: "Марьино-Западная",
+                                    number: "63",
+                                },
+                                {
+                                    title: "Марьино-Западная",
+                                    number: "63",
+                                },
+                                {
+                                    title: "Марьино-Западная",
+                                    number: "63",
+                                },
                             ]}
                          />
                     </div>

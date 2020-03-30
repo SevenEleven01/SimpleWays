@@ -68,6 +68,13 @@
     }
 }
 @media screen and (max-width: 1080px) {
+    .waysItemWrapper {
+        margin-top: 10px;
+        padding: 10px;
+    }
+    .waysItem {
+        height: 60px;
+    }
     .waysItemNumber {
         font-size: 18px;
     }
@@ -84,6 +91,7 @@
     .waysItemBtnMap {
         font-size: 12px;
         margin-right: 5px;
+        margin-left: 20px;
         width: 70px;
         height: 40px;
     }

@@ -7,7 +7,9 @@ export class news extends Component {
             <div className="news-wrapper">
                 <h2 className="news-title">Новости</h2>
                 <div className="news-block">
-
+                    <p>Сергей Филоненко ЛОХ!</p>
+                    <p>Сергей Филоненко ЛОХ!</p>
+                    <p>Сергей Филоненко ЛОХ!</p>
                 </div>
             </div>
         );

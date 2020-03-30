@@ -13,7 +13,7 @@ const WaysItem = ({items}) => {
                         <button className="waysItemBtnMap">Маршрут на карте</button>
                         <button className="waysItemBtnList waysItemBtnMap">Список остановок</button>
                         {/* admin? */}
-                        <Button danger>Delete</Button>
+                        {/* <Button danger>Delete</Button> */}
                     </div>
                 </div>
             ))}
