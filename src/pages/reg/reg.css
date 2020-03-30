@@ -41,7 +41,7 @@
   height: 45px;
   border: none;
   border-radius: 10px;
-  background-color: #2C929F;
+  background-color: #E66A08;
   color: #fff;
   font-size: 20px;
   font-weight: 400;
@@ -52,11 +52,31 @@
 }
 
 .button-reg:hover {
-  background-color: inherit;
-  color: #2C929F;
-  border: 1px solid #2C929F;
+  background-color: #000;
+  color: #fff;
 }
 
+@media screen and (max-width: 414px) {
+
+  .button-reg {
+    width: 315px;
+    height: 35px;
+    margin-left: 0;
+  }
+
+  .reg {
+    width: 350px;
+    height: 100vh;
+  }
+
+  .reg-form_title {
+    font-size: 30px;
+  }
+
+  .reg-form_subtitle {
+    font-size: 16px;
+  }
+}
 @media screen and (max-width: 375px) {
 
   .button-reg {
@@ -78,7 +98,7 @@
     font-size: 16px;
   }
 }
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 320px) {
   .button-reg {
     width: 277px;
     height: 30px;

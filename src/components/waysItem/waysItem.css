@@ -38,12 +38,12 @@
     font-size: 16px;
     border: none;
     border-radius: 10px;
-    background: #2C929F;
+    background: #E66A08;
     margin-right: 10px;
     transition: .5s;
 }
 .waysItemBtnMap:hover {
-    background: #2039b3;
+    background: #000;
     color: #fff;
 }
 @media screen and (max-width: 375px) {
@@ -67,7 +67,7 @@
         height: 40px;
     }
 }
-@media screen and (min-width: 375px) {
+@media screen and (max-width: 414px) {
     .waysItemNumber {
         font-size: 18px;
     }

@@ -31,6 +31,20 @@ function Home() {
                                     <div className="slide-text">
                                         <span className="slide-title">Карта</span>
                                         <p className="slide-subtitle">Карта для просмотра маршрутов по Крыму</p>
+                                        <div className="cards">
+                                            <div className="card">
+                                            <i class="fas fa-map-signs icon"></i>
+                                            <a href="/maps" className="cardTitle">Просмотр заведений поблизости</a>
+                                            </div>
+                                            <div className="card">
+                                            <i class="fas fa-road icon"></i>
+                                                <a href="/maps" className="cardTitle">Актуальное отображение пробок</a>
+                                            </div>
+                                            <div className="card">
+                                            <i class="fas fa-street-view icon"></i>
+                                            <a href="/maps" className="cardTitle">Изучайте панорманый вид дорог</a>
+                                            </div>
+                                        </div>
                                         <a href="/maps" className="slide-route">перейти к карте &#10095;</a>
                                     </div>
                                 </div>
@@ -45,6 +59,20 @@ function Home() {
                                         <div className="slide-text">
                                             <span className="slide-title">Маршруты</span>
                                             <p className="slide-subtitle">Маршруты Крыма в одном месте</p>
+                                            <div className="cards">
+                                            <div className="card">
+                                            <i class="fas fa-bus-alt icon"></i>
+                                            <Link to="/ways" className="cardTitle">Поиск по номерам маршрутов</Link>
+                                            </div>
+                                            <div className="card">
+                                            <i class="far fa-building icon"></i>
+                                            <Link to="/ways" className="cardTitle">Поиск маршрутов по адресу</Link>
+                                            </div>
+                                            <div className="card">
+                                            <i class="fas fa-info-circle icon"></i>
+                                            <Link to="/ways" className="cardTitle">Изучайте маршруты города</Link>
+                                            </div>
+                                        </div>
                                             <Link to="/ways" className="slide-route">перейти к маршрутам &#10095;</Link>
                                         </div>
                                     </div>

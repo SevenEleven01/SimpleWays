@@ -178,7 +178,7 @@ a:hover {
     font-size: 25px;
   }
 }
-@media screen and (min-width: 375px) {
+@media screen and (max-width: 414px) {
   .header-title {
     top: 0;
     position: fixed;

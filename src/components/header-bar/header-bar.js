@@ -15,7 +15,7 @@ class HeadBar extends Component {
             <div>
                 <div className="header-bar">
                     <div className="header-bar_menu">
-                        <Link to="/" className="header-bar_logo">SimpleWays</Link>
+                        <Link to="/" className="header-bar_logo">Simple<span style={{color: "#E66A08", fontWeight: "bold"}}>Ways</span></Link>
                         <a href="/maps">
                             <i className="fas fa-map"></i>
                             Карта
@@ -64,7 +64,7 @@ class HeadBar extends Component {
                         </Link>
                 </Menu>
                 <div className="header-title">
-                    <Link to="/" className="header-title_logo">SimpleWays</Link>
+                    <Link to="/" className="header-title_logo">Simple<span style={{color: "#E66A08", fontWeight: "bold"}}>Ways</span></Link>
                 </div>
             </div>
         );
