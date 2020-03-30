@@ -76,7 +76,7 @@
     opacity: 1;
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 1080px) {
     .ways {
         margin: 10px;
     }

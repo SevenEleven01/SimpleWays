@@ -56,7 +56,7 @@
   color: #fff;
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 1080px) {
 
   .button-reg {
     width: 315px;

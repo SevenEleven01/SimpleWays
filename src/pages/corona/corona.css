@@ -59,7 +59,7 @@
         overflow: scroll;
     }
 }
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 1080px) {
     .coronaCardWrapper {
         overflow: scroll;
     }
