@@ -171,7 +171,7 @@ ul {
   color: #2039b3;
 }
 /* Media */
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 1080px) {
   /* slides */
   .slide {
     height: 200px;
