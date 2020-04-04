@@ -9,16 +9,15 @@
   justify-content: center;
   align-items: center;
   margin-top: 70px;
-  /* min-width: 1080px; */
-  width: 80%;
-  /* max-height: 1040px; */
-  height: 90vh;
+  width: 95%;
+  height: 95vh;
   border: 1px solid #C4C4C4;
   border-radius: 15px;
   }
   .sign-form {
-  width: 735px;
-  height: 540px;
+    margin-top: 50px;
+  width: 63%;
+  height: 95%;
   }
   .sign-form_title {
     font-size: 40px;
@@ -44,9 +43,6 @@
     left: 125px;
   }
   @media screen and (max-width: 1080px) {
-    .sign {
-      height: 90vh;
-    }
     .sign-form_title {
       font-size: 30px;
     }
@@ -62,10 +58,6 @@
     }
   }
   @media screen and (max-width: 375px) {
-    /* .sign {
-      width: 350px;
-      height: 100vh;
-    } */
     .sign-form_title {
       font-size: 30px;
     }
@@ -81,9 +73,6 @@
     }
   }
   @media screen and (max-width: 320px) {
-    /* .sign {
-      width: 300px;
-    } */
     .sign-form_title {
       font-size: 28px;
     }

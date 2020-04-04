@@ -27,9 +27,8 @@
     font-size: 20px;
 }
 .waysItemBtnBlock {
-    position: absolute;
-    right: 0;
-    margin-right: 70px ;
+    width: 75%;
+    text-align: right;
 }
 .waysItemBtnMap {
     width: 170px;
@@ -84,9 +83,6 @@
     }
     .waysItemBtnBlock {
         display: flex;
-        justify-content: space-between;
-        position: initial;
-        margin-left: 15px;
     }
     .waysItemBtnMap {
         font-size: 12px;

@@ -10,17 +10,15 @@
   justify-content: center;
   align-items: center;
   margin-top: 70px;
-  max-width: 1535px;
-  width: 935px;
-  max-height: 1040px;
-  height: 740px;
+  width: 95%;
+  height: 95vh;
   border: 1px solid #C4C4C4;
   border-radius: 30px;
 }
 
 .reg-form {
-  width: 735px;
-  height: 540px;
+  width: 63%;
+  height: 95%;
 }
 
 .reg-form_title {
@@ -64,11 +62,6 @@
     margin-left: 0;
   }
 
-  .reg {
-    width: 350px;
-    height: 100vh;
-  }
-
   .reg-form_title {
     font-size: 30px;
   }
@@ -85,11 +78,6 @@
     margin-left: 0;
   }
 
-  .reg {
-    width: 350px;
-    height: 100vh;
-  }
-
   .reg-form_title {
     font-size: 30px;
   }
@@ -102,9 +90,6 @@
   .button-reg {
     width: 277px;
     height: 30px;
-  }
-  .reg {
-    width: 300px;
   }
   .reg-form_title {
     font-size: 28px;
