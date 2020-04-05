@@ -43,6 +43,9 @@
     left: 125px;
   }
   @media screen and (max-width: 1080px) {
+    .sign-form {
+      width: 500px;
+    }
     .sign-form_title {
       font-size: 30px;
     }

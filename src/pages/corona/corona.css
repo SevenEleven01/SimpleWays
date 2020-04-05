@@ -54,13 +54,27 @@
     line-height: 1.7;
     text-align: justify;
 }
+@media screen and (max-width: 1080px) {
+    .coronaTitle {
+        font-size: 26px;
+    }
+    .coronaSubtitle {
+        font-size: 20px;
+    }
+    .coronaCardWrapper {
+        overflow: scroll;
+    }
+}
 @media screen and (max-width: 375px) {
     .coronaCardWrapper {
         overflow: scroll;
     }
 }
-@media screen and (max-width: 1080px) {
-    .coronaCardWrapper {
-        overflow: scroll;
+@media screen and (max-width: 320px) {
+    .coronaTitle {
+        font-size: 16px;
+    }
+    .coronaSubtitle {
+        font-size: 14px;
     }
 }

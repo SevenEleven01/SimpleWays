@@ -9,6 +9,7 @@
     height: 70px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: 0 70px 0 30px;
     margin-bottom: 20px;
     border-radius: 15px;
@@ -27,7 +28,6 @@
     font-size: 20px;
 }
 .waysItemBtnBlock {
-    width: 75%;
     text-align: right;
 }
 .waysItemBtnMap {
@@ -45,12 +45,37 @@
     background: #000;
     color: #fff;
 }
+
+@media screen and (max-width: 1080px) {
+    .waysItemWrapper {
+        margin-top: 10px;
+        padding: 10px;
+    }
+    .waysItem {
+        height: 60px;
+    }
+    .waysItemNumber {
+        font-size: 18px;
+    }
+    .waysItemTitle {
+        font-size: 14px;
+    }
+    .waysItemBtnBlock {
+        display: flex;
+    }
+    .waysItemBtnMap {
+        font-size: 12px;
+        margin-right: 5px;
+        margin-left: 20px;
+        width: 70px;
+        height: 40px;
+    }
+}
 @media screen and (max-width: 375px) {
     .waysItemNumber {
         font-size: 18px;
     }
     .waysItemTitle {
-        font-weight: 400;
         font-size: 14px;
     }
     .waysItemBtnBlock {
@@ -66,29 +91,20 @@
         height: 40px;
     }
 }
-@media screen and (max-width: 1080px) {
-    .waysItemWrapper {
-        margin-top: 10px;
-        padding: 10px;
-    }
+@media screen and (max-width: 320px) {
     .waysItem {
-        height: 60px;
-    }
-    .waysItemNumber {
-        font-size: 18px;
+        margin-bottom: 5px;
     }
     .waysItemTitle {
-        font-weight: 400;
-        font-size: 14px;
-    }
-    .waysItemBtnBlock {
-        display: flex;
+        font-size: 12px;
     }
     .waysItemBtnMap {
-        font-size: 12px;
-        margin-right: 5px;
-        margin-left: 20px;
-        width: 70px;
+        width: 65px;
         height: 40px;
+        margin-right: 2px;
+        margin-left: 2px;
+    }
+    .waysItemNumber {
+        margin-right: 5px;
     }
 }

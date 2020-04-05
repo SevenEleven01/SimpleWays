@@ -55,7 +55,9 @@
 }
 
 @media screen and (max-width: 1080px) {
-
+  .reg-form {
+    width: 500px;
+  } 
   .button-reg {
     width: 315px;
     height: 35px;

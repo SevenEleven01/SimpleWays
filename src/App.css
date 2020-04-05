@@ -195,9 +195,6 @@ ul {
     font-size: 16px;
     word-wrap: break-word;
   }
-  .cards {
-    overflow: scroll;
-  }
   .card {
     width: 85px;
     height: 85px;
@@ -218,13 +215,13 @@ ul {
     height: 200px;
   }
   .icon-map {
-    padding-top: 20px;
-    padding-left: 28px;
-    font-size: 80px;
+    padding-top: 10px;
+    padding-left: 18px;
+    font-size: 50px;
   }
   .slide-text {
-    top: -70px;
-    left: 150px;
+    top: -50px;
+    left: 90px;
     bottom: 50px;
   }
   .slide-title {
@@ -245,18 +242,28 @@ ul {
     height: 150px;
   }
   .icon-map {
-    padding-top: 10px;
+    padding-top: 5px;
     padding-left: 18px;
-    font-size: 60px;
+    font-size: 40px;
   }
   .slide-text {
-    top: -55px;
-    left: 110px;
+    top: -45px;
+    left: 80px;
   }
   .slide-title {
     font-size: 16px;
   }
   .slide-subtitle {
     font-size: 14px;
+    margin: 0px 0 5px 0;
+  }
+  .card {
+    width: 75px;
+    height: 70px;
+    margin-right: 3px;
+    margin-bottom: 0;
+  }
+  .cardTitle {
+    font-size: 11px;
   }
 }
